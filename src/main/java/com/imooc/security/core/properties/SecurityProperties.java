@@ -1,6 +1,7 @@
 package com.imooc.security.core.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /**
  * @ClassName: SecurityProperties  
@@ -9,6 +10,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @date 2019年6月2日 下午5:27:04
  */
 @ConfigurationProperties(prefix="security")
+@Component
 public class SecurityProperties {
 
 	private SecurityBrowserProperties browser= new SecurityBrowserProperties();
