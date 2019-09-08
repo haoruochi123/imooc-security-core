@@ -1,32 +1,41 @@
 package com.imooc.security.core.properties;
 
 /**
- * @ClassName: SecurityBrowserProperties  
- * @Description: TODO
  * @author 郝若池
+ * @ClassName: SecurityBrowserProperties
+ * @Description: TODO
  * @date 2019年6月2日 下午5:28:31
  */
 public class SecurityBrowserProperties {
 
-	private String loginPage = "/login/login.html";
-	
-	//记住我过期时间
-	private int tokenValiditySeconds = 60*60*24*7;
+    private String loginPage = "/login/login.html";
 
-	public String getLoginPage() {
-		return loginPage;
-	}
+    private String signUpUrl = "/login/signUp.html";
 
-	public void setLoginPage(String loginPage) {
-		this.loginPage = loginPage;
-	}
+    //记住我过期时间
+    private int tokenValiditySeconds = 60 * 60 * 24 * 7;
 
-	public int getTokenValiditySeconds() {
-		return tokenValiditySeconds;
-	}
+    public String getLoginPage() {
+        return loginPage;
+    }
 
-	public void setTokenValiditySeconds(int tokenValiditySeconds) {
-		this.tokenValiditySeconds = tokenValiditySeconds;
-	}
-	
+    public void setLoginPage(String loginPage) {
+        this.loginPage = loginPage;
+    }
+
+    public int getTokenValiditySeconds() {
+        return tokenValiditySeconds;
+    }
+
+    public void setTokenValiditySeconds(int tokenValiditySeconds) {
+        this.tokenValiditySeconds = tokenValiditySeconds;
+    }
+
+    public String getSignUpUrl() {
+        return signUpUrl;
+    }
+
+    public void setSignUpUrl(String signUpUrl) {
+        this.signUpUrl = signUpUrl;
+    }
 }
